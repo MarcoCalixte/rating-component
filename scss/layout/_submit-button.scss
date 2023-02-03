@@ -1,0 +1,26 @@
+@use '../colors/colors' as *;
+@use '../components/mixing' as *;
+
+.submit {
+  grid-area: submit;
+  &__submit-btn {
+    background-color: $Orange;
+    border: transparent;
+    border-radius: 2em;
+    width: 300px;
+    max-width: 300px;
+    height: 7vh;
+    min-height: 3rem;
+    color: $white;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $Orange;
+    }
+  }
+
+  // @include small-screen-mobile {
+  // }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <!-- FORM 1 - HOW DID WE DO CONTENT -->
+  <form class="form-container" id="feedback-box">
+    <div class="form-group">
+      <section class="icon-star">
+        <img src="images/icon-star.svg" alt="">
+      </section>
+      <section class="how-did-we-do">
+        <h1>How did we do?</h1>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </section>
+      <section class="rating-state-start">
+        <span class="rating-state-start__start-group" id="rating-group">
+
+          <button class="rating-state " type="button" aria-selected="false" role="button">1</button>
+
+          <button class="rating-state " type="button" aria-selected="false" role="button">2</button>
+
+          <button class="rating-state active" type="button" aria-selected="false" role="button">3</button>
+
+          <button class="rating-state " type="button" aria-selected="false" role="button">4</button>
+
+          <button class="rating-state " type="button" aria-selected="false" role="button">5</button>
+
+        </span>
+      </section>
+      <section class="submit">
+        <button class="submit__submit-btn" id="submit-button" type="button" value="Submit">Submit</button>
+      </section>
+    </div>
+  </form>
+
+  <!-- FORM 2 - THANK YOU CONTENT -->
+  <form class="form-container-2 hide" id="thank-you-box">
+    <div class="form-group-2 ">
+      <section class="thank-you-illustration">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </section>
+      <section class="selected-content">
+        <button class="selected-content__btn" id="rating-result" type="button" value="result">
+          You selected
+          <span id="selected-rating">
+            0
+          </span> out of 5
+        </button>
+      </section>
+      <section class="thank-you-content">
+        <h1 class="title">Thank you!</h1>
+
+        <p class="text">We appreciate you taking the time to give a rating.
+          If you ever need more support, don't hesitate to
+          get in touch!
+        </p>
+      </section>
+    </div>
+  </form>
+
+  <!-- ATTRIBUTION CONTENT -->
+  <div class="attribution" style="color: #fff">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+    Coded by <a href="https://github.com/MarcoCalixte" target="_blank">Marco J. Calixte </a>.
+  </div>
+
+  <!-- JS SOURCE FILE -->
+  <script src="/main.js"></script>
+</body>
+
+</html>

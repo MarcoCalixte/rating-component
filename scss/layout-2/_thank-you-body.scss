@@ -1,0 +1,44 @@
+@use '../colors/colors' as *;
+html {
+  box-sizing: border-box;
+}
+body {
+  // border: 1px solid rgb(0, 255, 213);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $Very-Dark-Blue;
+  // background-color: $Very-Dark-Blue;
+
+  .form-group-2 {
+    margin: 0 auto;
+    border-width: thick;
+    border-radius: 40px;
+    display: grid;
+    grid-template-areas:
+      'thank-you-illustration'
+      'selected-content '
+      'thank-you-content ';
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    max-width: 100vw;
+    height: 70vh;
+    min-height: 25rem;
+    background-color: $Dark-Blue;
+  }
+  .hide {
+    display: none;
+  }
+  // @media (min-width: 375px) {
+  //     .form-container {
+  //       background-color: lightgreen;
+  //     }
+  //   }
+}

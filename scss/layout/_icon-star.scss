@@ -1,0 +1,24 @@
+@use '../colors/colors' as *;
+@use '../components/mixing' as *;
+
+.icon-star {
+  grid-area: icon-star;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70%;
+  background-color: $Middle-Grey;
+  border: 1px solid transparent;
+  height: 5ch;
+  width: 5ch;
+  border-radius: 50%;
+  cursor: pointer;
+
+  img {
+    width: 40%;
+  }
+
+  // @include small-screen-mobile {
+  // }
+}

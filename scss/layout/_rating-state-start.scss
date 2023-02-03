@@ -1,0 +1,50 @@
+@use '../colors/colors' as *;
+@use '../components/mixing' as *;
+
+.rating-state-start {
+  grid-area: rating-state-start;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__start-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    gap: 1ch;
+    width: 300px;
+    max-width: 300px;
+
+    [aria-selected='false'] {
+      background-color: $Middle-Grey;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 5ch;
+      width: 50px;
+      border-radius: 50%;
+      color: $Medium-Grey;
+      font-weight: lighter;
+      border: 1px solid transparent;
+      font-size: 0.9rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $Light-Grey;
+        color: $white;
+      }
+    }
+    .active {
+      &:focus {
+        background-color: $Orange;
+        color: $white;
+      }
+    }
+  }
+
+  // @include small-screen-mobile {
+  // }
+}

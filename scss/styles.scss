@@ -1,0 +1,26 @@
+// .attribution {
+//     font-size: 11px; text-align: center;
+// }
+
+// .attribution a {
+//     color: hsl(228, 45%, 44%);
+// }
+
+//Components
+@use 'components/mixing';
+//Components
+
+// LAYOUTS //
+@use 'layout/regular-state-body';
+@use 'layout/icon-star';
+@use 'layout/how-did-we-do';
+@use 'layout/rating-state-start';
+@use 'layout/submit-button';
+// LAYOUTS //
+
+@use 'layout-2/thank-you-body';
+@use 'layout-2/thank-you-illustration';
+@use 'layout-2/selected-content';
+@use 'layout-2/thank-you-content';
+
+@use 'colors/colors';

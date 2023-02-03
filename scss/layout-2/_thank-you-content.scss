@@ -1,0 +1,29 @@
+@use '../colors/colors' as *;
+@use '../typography/typography.scss' as *;
+@use '../components/mixing' as *;
+
+.thank-you-content {
+  grid-area: thank-you-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em 0 2em;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+
+  h1 {
+    color: $white;
+    font-weight: $font-weight1;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  p {
+    color: $Medium-Grey;
+    font-size: $paragraph-font-size;
+    font-weight: $font-weight1;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+}

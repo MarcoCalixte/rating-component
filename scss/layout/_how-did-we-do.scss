@@ -1,0 +1,27 @@
+@use '../colors/colors' as *;
+@use '../typography/typography.scss' as *;
+@use '../components/mixing' as *;
+
+.how-did-we-do {
+  grid-area: how-did-we-do;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 2em 0 2em;
+  font-family: 'Poppins', sans-serif;
+
+  h1 {
+    color: $white;
+    font-weight: $font-weight1;
+  }
+
+  p {
+    color: $Medium-Grey;
+    font-size: $paragraph-font-size;
+    font-weight: $font-weight1;
+  }
+
+  // @include small-screen-mobile {
+  // }
+}

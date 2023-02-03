@@ -1,0 +1,23 @@
+@use '../colors/colors' as *;
+@use '../components/mixing' as *;
+
+.selected-content {
+  grid-area: selected-content;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__btn {
+    background-color: $Middle-Grey;
+    border: transparent;
+    border-radius: 2em;
+    width: 200px;
+    max-width: 300px;
+    height: 5vh;
+    min-height: 2.5rem;
+    color: $Orange;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+}
